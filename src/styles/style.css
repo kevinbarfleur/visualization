@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    margin: 20px;
+}
+
+.App {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    transition: .5s;
+}
+
+.header.compressed {
+    font-size: 20px;
+    width: 600px;
+    transition: .5s;
+}
+
+.header span {
+    font-size: 1.3em;
+    text-shadow: -10px -10px #A5D6A7,
+              10px 10px #e57373;
+}
+
+.header .span_dot {
+    font-size: 1.3em;
+    text-shadow: -5px -5px #A5D6A7,
+              5px -5px #e57373;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-bottom: 150px;
+}
+
+.item {
+    z-index: 1;
+    position: relative;
+    opacity: .8;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #e57373;
+    padding: 20px;
+
+    transition: .4s;
+}
+
+.item_true {
+    background-color: #e57373;
+}
+
+.item_false {
+    background-color: #A5D6A7;
+}
+
+.item:hover {
+    box-shadow: 5px 5px 30px lightgrey;
+    transform: scale(1.05);
+    opacity: 1;
+    cursor: pointer;
+
+    transition: .4s;
+}
+
+.control_panel {
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    transition: .5s;
+}
+
+.control_panel.compressed {
+    transition: .5s;
+    width: 500px;
+    padding-right: 1200px;
+}
+
+#search {
+    margin: 40px;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.company_page {
+    transition: .4s;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    transform: translateX(100%);
+      
+    width: 1100px;
+    height: 100vh;
+    background-color: white;
+}
+
+.company_page.active {
+    transition: .4s;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    transform: translateX(0%);
+      
+    width: 1100px;
+    height: 100vh;
+    box-shadow: 10px 10px 50px lightgrey;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.company_page p {
+    padding: 50px 100px 50px 100px;
+}
+
+.company_page_title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: auto;
+}
+
+.exit_button {
+    background-color: lightgrey;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .5s;
+}
+.exit_button:hover {
+    cursor: pointer;
+    left: 20px;
+    transition: .5s;
+}
+
+.dashboard_image {
+    width: 90%;
+    margin: auto;
+    /* padding: 50px; */
+}
